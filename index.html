@@ -6,7 +6,8 @@
   }
   window.onload = function () {
     let sipona = document.querySelector("#sipona")
-    sipona.appendChild(imgSrc("siNtelen pona/"+prompt()+".png"))
+    let inp = prompt().split(" ")
+    inp.forEach(x=>sipona.appendChild(imgSrc("siNtelen pona/"+x+".png")))
   }
 </script>
-<div id="sipona"></div>
+<div id="sipona" style="vertical-align:middle"></div>
