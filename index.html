@@ -4,7 +4,9 @@
     x.src = src
     return x
   }
-  let sipona = document.querySelector("#sipona")
-  sipona.appendChild(imgSrc("siNtelen pona/"+prompt()+".png"))
+  window.onload = function () {
+    let sipona = document.querySelector("#sipona")
+    sipona.appendChild(imgSrc("siNtelen pona/"+prompt()+".png"))
+  }
 </script>
 <div id="sipona"></div>
