@@ -1,13 +1,18 @@
+<link href="fontstyle.css" rel="stylesheet">
 <script>
-  function imgSrc(src,w,h) {
-    let x = new Image(w,h)
-    x.src = src
-    return x
-  }
-  window.onload = function () {
-    let sipona = document.querySelector("#sipona")
-    let inp = prompt().split(" ")
-    inp.forEach(x=>sipona.appendChild(imgSrc("siNtelen pona/"+x+".png")))
+  let font = 1
+  if (!font) {
+    function imgSrc(src,w,h) {
+      let x = new Image(w,h)
+      x.src = src
+      return x
+    }
+    window.onload = function () {
+      let sipona = document.querySelector("#sipona")
+      let inp = prompt().split(" ")
+      inp.forEach(x=>sipona.appendChild(imgSrc("siNtelen pona/"+x+".png")))
+    }
   }
 </script>
 <div id="sipona" style=" display: flex; align-items: center;"></div>
+<p style="font-family: Glyphter">OHJK</p>
